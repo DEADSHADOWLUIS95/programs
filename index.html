@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Luis programs</title>
+</head>
+<body>
+ body::before {
+      content: "";
+      position: fixed;
+      top:0; left:0;
+      width:100%; height:100%;
+      background: url('https://cdn.wallpapersafari.com/9/33/7Vd6Un.jpg') no-repeat center center/cover;
+      z-index: -2;
+	
+<h1>This is where I will write all my c++ programs in Javascript</h1>
+<p>So I can run it in any browser </p>
+
+ 
+
+<h2>Add Two Numbers</h2>
+    <input type="number" id="num1" placeholder="Enter first number">
+    <input type="number" id="num2" placeholder="Enter second number">
+    <button onclick="calculateSum()">Calculate Sum</button>
+    <p>Result: <span id="result"></span></p>
+
+<h2> Multiply TWO NUMBERS</h2>
+ <input type="pnumber" id="pnum1" placeholder="Enter first number">
+    <input type="pnumber" id="pnum2" placeholder="Enter second number">
+    <button onclick="calculateProduct()">Calculate Sum</button>
+    <p>Result: <span id="presult"></span></p>
+
+<script>
+function calculateSum() {
+//Get the values from the input field
+let num1 = parseFloat(document.getElementById('num1').value);
+let num2 = parseFloat(document.getElementById('num2').value);
+
+//calulate the Sum
+let sum = num1 + num2;
+
+//Display the Result
+document.getElementById('result').textContent = sum;
+ }
+ 
+ function calculateProduct() {
+//Get the values from the input field
+let pnum1 = parseFloat(document.getElementById('pnum1').value);
+let pnum2 = parseFloat(document.getElementById('pnum2').value);
+
+//calulate the product
+let sum = pnum1 * pnum2;
+
+//Display the Result
+document.getElementById('presult').textContent = sum;
+ }
+</script>
+
+</body>
+</html>

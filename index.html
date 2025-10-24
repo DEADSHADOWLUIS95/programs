@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Luis programs</title>
+  <style>
+    /* Apply a full-page background image */
+    body {
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD7z4Bu6-B6AyitZcQlVxFPILNbpuLs0o9Ug&s');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white; /* Make all text white */
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1, h2, p {
+      text-shadow: 2px 2px 4px black; /* Adds contrast against the background */
+    }
+
+    input {
+      padding: 8px;
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    button {
+      background-color: #ffffff;
+      color: black;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #dddddd;
+    }
+
+    span {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>This is where I will write all my C++ programs in Javascript</h1>
+  <p>So I can get hired in a good job</p>
+
+  <!-- Add Two Numbers -->
+  <h2>Add Two Numbers</h2>
+  <input type="number" id="num1" placeholder="Enter first number">
+  <input type="number" id="num2" placeholder="Enter second number">
+  <button onclick="calculateSum()">Calculate Sum</button>
+  <p>Result: <span id="result"></span></p>
+
+  <!-- Multiply Two Numbers -->
+  <h2>Multiply Two Numbers</h2>
+  <input type="number" id="pnum1" placeholder="Enter first number">
+  <input type="number" id="pnum2" placeholder="Enter second number">
+  <button onclick="calculateProduct()">Calculate Multiplication</button>
+  <p>Result: <span id="presult"></span></p>
+
+  <!-- Subtract Two Numbers -->
+  <h2>Subtract Two Numbers</h2>
+  <input type="number" id="snum1" placeholder="Enter first number">
+  <input type="number" id="snum2" placeholder="Enter second number">
+  <button onclick="calculateDifference()">Calculate Subtraction</button>
+  <p>Result: <span id="sresult"></span></p>
+
+  <!-- Divide Two Numbers -->
+  <h2>Divide Two Numbers</h2>
+  <input type="number" id="dnum1" placeholder="Enter first number">
+  <input type="number" id="dnum2" placeholder="Enter second number">
+  <button onclick="calculateDivision()">Calculate Division</button>
+  <p>Result: <span id="dresult"></span></p>
+
+  <script>
+    function calculateSum() {
+      let num1 = parseFloat(document.getElementById('num1').value);
+      let num2 = parseFloat(document.getElementById('num2').value);
+      let sum = num1 + num2;
+      document.getElementById('result').textContent = sum;
+    }
+
+    function calculateProduct() {
+      let pnum1 = parseFloat(document.getElementById('pnum1').value);
+      let pnum2 = parseFloat(document.getElementById('pnum2').value);
+      let product = pnum1 * pnum2;
+      document.getElementById('presult').textContent = product;
+    }
+
+    function calculateDifference() {
+      let snum1 = parseFloat(document.getElementById('snum1').value);
+      let snum2 = parseFloat(document.getElementById('snum2').value);
+      let difference = snum1 - snum2;
+      document.getElementById('sresult').textContent = difference;
+    }
+
+    function calculateDivision() {
+      let dnum1 = parseFloat(document.getElementById('dnum1').value);
+      let dnum2 = parseFloat(document.getElementById('dnum2').value);
+      let division = dnum1 / dnum2;
+      document.getElementById('dresult').textContent = division;
+    }
+  </script>
+</body>
+</html>
